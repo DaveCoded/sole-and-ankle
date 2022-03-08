@@ -39,7 +39,7 @@ const ShoeCard = ({ slug, name, imageSrc, price, salePrice, releaseDate, numOfCo
                 </Row>
                 <Row>
                     <ColorInfo>{pluralize('Color', numOfColors)}</ColorInfo>
-                    {variant === 'on-sale' && <SalePrice>{formatPrice(price - 2000)}</SalePrice>}
+                    {variant === 'on-sale' && <SalePrice>{formatPrice(salePrice)}</SalePrice>}
                 </Row>
             </Wrapper>
         </Link>
